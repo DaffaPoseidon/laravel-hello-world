@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+     echo "Selamat Datang";
+});
+
+Route::get('/about', function () {
+     echo "Nama: Daffa Cahyo Alghifari <br> NIM: 1941720104 <br> Kelas: TI_2A";
+    
 });
