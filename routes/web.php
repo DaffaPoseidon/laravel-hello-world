@@ -21,3 +21,6 @@ Route::get('/about', function () {
      echo "Nama: Daffa Cahyo Alghifari <br> NIM: 1941720104 <br> Kelas: TI_2A";
     
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
